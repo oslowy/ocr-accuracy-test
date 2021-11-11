@@ -6,7 +6,7 @@ import xml.dom.minidom as dom
 def extract_image_info(image_element):
     tagged_rectangle_elements = image_element.getElementsByTagName("taggedRectangle")
 
-    return {e.getElementsByTagName("tag")[0]: dict(e.attributes.items())
+    return {e.getElementsByTagName("tag")[0].firstChild.data: dict(e.attributes.items())
             for e in tagged_rectangle_elements}
 
 
@@ -14,7 +14,7 @@ def ground_truth_dictionary(gt_xml_file):
     document = dom.parse(gt_xml_file)
     image_elements = document.getElementsByTagName("image")
 
-    return {e.getElementsByTagName("imageName")[0]: extract_image_info(e)
+    return {e.getElementsByTagName("imageName")[0].firstChild.data: extract_image_info(e)
             for e in image_elements}
 
 
