@@ -1,5 +1,4 @@
 import sys
-import json
 import xml.dom.minidom as dom
 
 
@@ -24,7 +23,9 @@ def main():
     args = sys.argv[1:]
 
     with open(args[0]) as gt_xml_file:
-        print(ground_truth_dictionary(gt_xml_file))
+        truth = ground_truth_dictionary(gt_xml_file)
+
+    print(truth)
 
 
 if __name__ == "__main__":
