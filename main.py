@@ -19,6 +19,15 @@ def ground_truth_dictionary(gt_xml_file):
             for e in image_elements]
 
 
+def extract_output_words(one_image_ocr, version):
+    if version == 'aws':
+        return [detection
+                for detection in one_image_ocr['TextDetections']
+                if detection['Type'] == 'WORD']
+    else:  # Google format
+        return one_image_ocr[1:]
+
+
 def main():
     args = sys.argv[1:]
 

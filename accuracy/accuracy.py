@@ -30,5 +30,12 @@ def convert_bounding_poly(truth_word_info):
 def extract_bounding_poly(output_word_info, version):
     if version == 'aws':
         return Polygon([(point['X'], point['Y']) for point in output_word_info['Geometry']['Polygon']])
-    else:
+    else:  # Google format
         return Polygon([(point['x'], point['y']) for point in output_word_info['boundingPoly']['vertices']])
+
+
+def extract_word(output_word_info, version):
+    if version == 'aws':
+        return output_word_info['DetectedText']
+    else:  # Google format
+        return output_word_info['description']
