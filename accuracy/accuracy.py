@@ -6,19 +6,19 @@ def area_within_ratio(observed_poly, target_poly):
     return (observed_poly.intersection(target_poly)).area / observed_poly.area
 
 
-def locate_output_word_in_truth(output_word_info, truth_word_infos, version):
+def locate_truth_word_in_output(truth_word_info, output_word_infos, version):
     """
+    :param truth_word_info: From ground truth data.
+    :param output_word_infos: From cloud OCR output.
     :param version: Google or AWS output format
-    :param output_word_info: From cloud OCR output.
-    :param truth_word_infos: From ground truth data.
     :return: The word that the output word correlates to for edit distance checking
     """
     within_truth_threshold = 0.75
 
-    for truth_word_info in truth_word_infos:
-        word = truth_word_info['word']
+    for output_word_info in output_word_infos:
+        word = extract_output_word(output_word_info, version)
         within_truth_area = area_within_ratio(extract_output_bounding_poly(output_word_info, version),
-                             convert_truth_bounding_poly(truth_word_info))
+                                              convert_truth_bounding_poly(truth_word_info))
         if within_truth_area >= within_truth_threshold:
             return word
     return False
@@ -46,5 +46,5 @@ def extract_output_word(output_word_info, version):
         return output_word_info['description']
 
 
-def accuracy_score(output_word, truth_word):
-    return partial_ratio(output_word.lower(), truth_word.lower())
+def accuracy_score(truth_word, output_word):
+    return partial_ratio(output_word.lower(), truth_word.lower()) if output_word else 0
