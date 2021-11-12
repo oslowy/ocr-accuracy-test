@@ -12,9 +12,10 @@ def locate_output_word_in_truth(output_word_info, truth_word_infos, version):
     """
     within_truth_threshold = 0.75
 
-    for word in truth_word_infos:
+    for truth_word_info in truth_word_infos:
+        word = truth_word_info['word']
         within_truth_area = area_within_ratio(extract_output_bounding_poly(output_word_info, version),
-                             convert_truth_bounding_poly(truth_word_infos[word]))
+                             convert_truth_bounding_poly(truth_word_info))
         if within_truth_area >= within_truth_threshold:
             return word
     return False

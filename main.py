@@ -7,15 +7,16 @@ import accuracy.accuracy as accuracy
 def extract_image_info(image_element):
     tagged_rectangle_elements = image_element.getElementsByTagName("taggedRectangle")
 
-    return {e.getElementsByTagName("tag")[0].firstChild.data:
-            dict(e.attributes.items())
-            for e in tagged_rectangle_elements}
+    # Key is sequence index, not target word, because target words are often duplicated
+    return [dict([('word', e.getElementsByTagName("tag")[0].firstChild.data)] + e.attributes.items())
+            for e in tagged_rectangle_elements]
 
 
 def ground_truth_dictionary(gt_xml_file):
     document = dom.parse(gt_xml_file)
     image_elements = document.getElementsByTagName("image")
 
+    # Key is filename because those are unique
     return {e.getElementsByTagName("imageName")[0].firstChild.data[4:-4]:  # Remove img/ prefix and .jpg file extension
             extract_image_info(e)
             for e in image_elements}
