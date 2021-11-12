@@ -31,9 +31,9 @@ def extract_output_word_infos(one_image_ocr, version):
 
 
 def truth_word_correlation(truth, outputs, image_name, version):
-    return {accuracy.extract_output_word(output_word_info, version):
-                accuracy.locate_output_word_in_truth(output_word_info, truth[image_name], version)
-            for output_word_info in extract_output_word_infos(outputs[image_name], version)}
+    return [(accuracy.extract_output_word(output_word_info, version),
+                accuracy.locate_output_word_in_truth(output_word_info, truth[image_name], version))
+            for output_word_info in extract_output_word_infos(outputs[image_name], version)]
 
 
 def main():

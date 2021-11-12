@@ -10,11 +10,12 @@ def locate_output_word_in_truth(output_word_info, truth_word_infos, version):
     :param truth_word_infos: From ground truth data.
     :return: The word that the output word correlates to for edit distance checking
     """
-    overlap_threshold = 0.75
+    within_truth_threshold = 0.75
 
     for word in truth_word_infos:
-        if area_within_ratio(extract_output_bounding_poly(output_word_info, version),
-                             convert_truth_bounding_poly(truth_word_infos[word])) >= overlap_threshold:
+        within_truth_area = area_within_ratio(extract_output_bounding_poly(output_word_info, version),
+                             convert_truth_bounding_poly(truth_word_infos[word]))
+        if within_truth_area >= within_truth_threshold:
             return word
     return False
 
