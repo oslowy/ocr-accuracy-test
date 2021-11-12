@@ -1,6 +1,8 @@
 from shapely.geometry import Polygon
 
-from accuracy.area_check import area_within_ratio
+
+def area_within_ratio(observed_poly, target_poly):
+    return (observed_poly.intersection(target_poly)).area / observed_poly.area
 
 
 def locate_output_word_in_truth(output_word_info, truth_word_infos, version):
