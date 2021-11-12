@@ -1,7 +1,9 @@
 import json
+import os
 import sys
 import xml.dom.minidom as dom
 import accuracy.accuracy as accuracy
+import csv
 
 
 def extract_image_info(image_element):
@@ -41,22 +43,21 @@ def truth_word_correlation(truth, outputs, image_name, version):
 
 
 def main():
-    # Args: ground_truth_filename, output_file_path, output_list_filename, version
+    # Args: ground truth filename, output file path, version ('google' or 'aws')
     args = sys.argv[1:]
     gt_filename = args[0]
-    out_path = args[1]
-    out_list = args[2]
-    version = args[3]
+    ocr_out_path = args[1]
+    version = args[2]
 
     # Read ground truth file
     with open(gt_filename) as gt_xml_file:
         truth = ground_truth_dictionary(gt_xml_file)
 
     # Read output files by reading filenames in meta-list file
-    with open(out_list) as out_list_file:
+    with open(f"{ocr_out_path}/output_list.txt") as out_list_file:
         output_filenames = [filename.rstrip('\n') for filename in out_list_file]
 
-        outputs_contents = {filename: json.load(open(f"{out_path}/{filename}.txt"))
+        outputs_contents = {filename: json.load(open(f"{ocr_out_path}/{filename}.txt"))
                             for filename in output_filenames}
 
     # Extract data from output formats
@@ -70,7 +71,18 @@ def main():
                                  for correlation in correlations[image_name]]
                     for image_name in correlations}
 
-    print(match_scores)
+    # Output results
+    scores_path = f"{ocr_out_path}_scores"
+    if not os.path.exists(scores_path):
+        os.makedirs(scores_path)
+
+    for image in match_scores:
+        with open(f"{scores_path}/{image}.csv", 'w') as scores_file:
+            writer = csv.writer(scores_file)
+            writer.writerow(('truth', 'observed', 'score'))
+
+            for score in match_scores[image]:
+                writer.writerow(score)
 
 
 if __name__ == "__main__":
