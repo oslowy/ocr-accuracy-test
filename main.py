@@ -70,7 +70,6 @@ def main():
                                  for correlation in correlations[image_name]]
                     for image_name in correlations}
 
-    print(correlations)
     print(match_scores)
 
 
