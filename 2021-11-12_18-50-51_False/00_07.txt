@@ -1,0 +1,157 @@
+[
+{
+  "locale": "en",
+  "description": "\u56e0\nANAHEIM BAND INSTRUMENTS\n",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 253,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 431
+      },
+      {
+        "x": 253,
+        "y": 431
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "\u56e0",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 1004,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 19
+      },
+      {
+        "x": 1004,
+        "y": 19
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "ANAHEIM",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 253,
+        "y": 383
+      },
+      {
+        "x": 371,
+        "y": 376
+      },
+      {
+        "x": 374,
+        "y": 423
+      },
+      {
+        "x": 256,
+        "y": 431
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "BAND",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 384,
+        "y": 373
+      },
+      {
+        "x": 466,
+        "y": 368
+      },
+      {
+        "x": 469,
+        "y": 417
+      },
+      {
+        "x": 387,
+        "y": 422
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "INSTRUMENTS",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 480,
+        "y": 365
+      },
+      {
+        "x": 731,
+        "y": 349
+      },
+      {
+        "x": 735,
+        "y": 403
+      },
+      {
+        "x": 483,
+        "y": 419
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+}
+]

@@ -1,0 +1,188 @@
+[
+{
+  "locale": "pt-PT",
+  "description": "\u56e0\n416\n1M -UELICIBRA\nMUZEO\n",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 366,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 386
+      },
+      {
+        "x": 366,
+        "y": 386
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "\u56e0",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 1004,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 4
+      },
+      {
+        "x": 1019,
+        "y": 19
+      },
+      {
+        "x": 1004,
+        "y": 19
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "416",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 545,
+        "y": 213
+      },
+      {
+        "x": 629,
+        "y": 215
+      },
+      {
+        "x": 629,
+        "y": 221
+      },
+      {
+        "x": 545,
+        "y": 219
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "1M",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 366,
+        "y": 216
+      },
+      {
+        "x": 449,
+        "y": 215
+      },
+      {
+        "x": 449,
+        "y": 254
+      },
+      {
+        "x": 366,
+        "y": 255
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "-UELICIBRA",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 480,
+        "y": 215
+      },
+      {
+        "x": 793,
+        "y": 213
+      },
+      {
+        "x": 793,
+        "y": 253
+      },
+      {
+        "x": 480,
+        "y": 255
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "MUZEO",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 491,
+        "y": 367
+      },
+      {
+        "x": 567,
+        "y": 366
+      },
+      {
+        "x": 567,
+        "y": 385
+      },
+      {
+        "x": 491,
+        "y": 386
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+}
+]

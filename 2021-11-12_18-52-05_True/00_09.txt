@@ -1,0 +1,126 @@
+[
+{
+  "locale": "en",
+  "description": "GOODWILL STORE\n3,000\n",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 156,
+        "y": 342
+      },
+      {
+        "x": 855,
+        "y": 342
+      },
+      {
+        "x": 855,
+        "y": 501
+      },
+      {
+        "x": 156,
+        "y": 501
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "GOODWILL",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 258,
+        "y": 346
+      },
+      {
+        "x": 602,
+        "y": 344
+      },
+      {
+        "x": 602,
+        "y": 399
+      },
+      {
+        "x": 258,
+        "y": 401
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "STORE",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 644,
+        "y": 343
+      },
+      {
+        "x": 855,
+        "y": 342
+      },
+      {
+        "x": 855,
+        "y": 397
+      },
+      {
+        "x": 644,
+        "y": 398
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "3,000",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 156,
+        "y": 464
+      },
+      {
+        "x": 259,
+        "y": 463
+      },
+      {
+        "x": 259,
+        "y": 500
+      },
+      {
+        "x": 156,
+        "y": 501
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+}
+]

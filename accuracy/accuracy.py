@@ -3,25 +3,25 @@ from shapely.geometry import Polygon
 from accuracy.area_check import area_within_ratio
 
 
-def locate_output_word_in_truth(output_word, truth_words, version):
+def locate_output_word_in_truth(output_word_info, truth_word_infos, version):
     """
     :param version: Google or AWS output format
-    :param output_word: From cloud OCR output.
-    :param truth_words: From ground truth data.
+    :param output_word_info: From cloud OCR output.
+    :param truth_word_infos: From ground truth data.
     :return: The word that the output word correlates to for edit distance checking
     """
     overlap_threshold = 0.75
 
-    for truth_word in truth_words:
-        if area_within_ratio(extract_output_bounding_poly(output_word, version),
-                             convert_truth_bounding_poly(truth_word)) >= overlap_threshold:
-            return truth_word['word']
+    for word in truth_word_infos:
+        if area_within_ratio(extract_output_bounding_poly(output_word_info, version),
+                             convert_truth_bounding_poly(truth_word_infos[word])) >= overlap_threshold:
+            return word
     return False
 
 
 def convert_truth_bounding_poly(word_info):
-    x0, y0 = word_info['x'], word_info['y']
-    width, height = word_info['width'], word_info['height']
+    x0, y0 = float(word_info['x']), float(word_info['y'])
+    width, height = float(word_info['width']), float(word_info['height'])
 
     # Points returned in order going around the outside of the rectangle
     return Polygon([(x0, y0), (x0 + width, y0), (x0 + width, y0 + height), (x0, y0 + height)])
