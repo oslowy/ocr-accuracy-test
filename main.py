@@ -63,8 +63,13 @@ def main():
     # Run accuracy check
     correlations = {image_name: truth_word_correlation(truth, outputs_data, image_name, version)
                     for image_name in outputs_data}
+    match_scores = {image_name: [(correlation[1], accuracy.accuracy_score(*correlation))
+                                 for correlation in correlations[image_name]
+                                 if correlation[1]]
+                    for image_name in correlations}
 
     print(correlations)
+    print(match_scores)
 
 
 if __name__ == "__main__":
