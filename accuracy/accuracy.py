@@ -1,5 +1,5 @@
 from shapely.geometry import Polygon
-from fuzzywuzzy.fuzz import partial_ratio
+from fuzzywuzzy.fuzz import ratio
 
 
 def area_within_ratio(observed_poly, target_poly):
@@ -41,10 +41,14 @@ def extract_output_bounding_poly(word_info, version):
 
 def extract_output_word(output_word_info, version):
     if version == 'aws':
-        return output_word_info['DetectedText']
+        word = output_word_info['DetectedText']
     else:  # Google format
-        return output_word_info['description']
+        word = output_word_info['description']
+
+    return word.encode('ascii', 'ignore').decode('ascii')
 
 
 def accuracy_score(truth_word, output_word):
-    return partial_ratio(output_word.lower(), truth_word.lower()) if output_word else 0
+    return ratio(output_word.lower()[:len(truth_word)],
+                 truth_word.lower()) \
+        if output_word else 0
