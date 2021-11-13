@@ -1,45 +1,10 @@
 import json
 import os
 import sys
-import xml.dom.minidom as dom
-import accuracy.accuracy as accuracy
-import csv
 
-
-def extract_image_info(image_element):
-    tagged_rectangle_elements = image_element.getElementsByTagName("taggedRectangle")
-
-    # Key is sequence index, not target word, because target words are often duplicated
-    return [dict([('word', e.getElementsByTagName("tag")[0].firstChild.data)] + e.attributes.items())
-            for e in tagged_rectangle_elements]
-
-
-def ground_truth_dictionary(gt_xml_file):
-    document = dom.parse(gt_xml_file)
-    image_elements = document.getElementsByTagName("image")
-
-    # Key is filename because those are unique
-    return {e.getElementsByTagName("imageName")[0].firstChild.data[4:-4]:  # Remove img/ prefix and .jpg file extension
-                extract_image_info(e)
-            for e in image_elements}
-
-
-def extract_observed_word_infos(one_image_ocr, version):
-    if version == 'aws':
-        return [detection
-                for detection in one_image_ocr['TextDetections']
-                if detection['Type'] == 'WORD']
-    else:  # Google format
-        return one_image_ocr[1:]
-
-
-def truth_word_correlation(truth, observations, image_name, version):
-    return [(truth_word_info['word'],
-             accuracy.locate_truth_word_in_observation(truth_word_info,
-                                                       extract_observed_word_infos(observations[image_name],
-                                                                                   version),
-                                                       version))
-            for truth_word_info in truth[image_name]]
+from correlate import truth_word_correlation
+from extract import ground_truth_dictionary, extract_observed_word_infos
+from scoring import get_scores, get_averages, store_scores, store_averages, make_scores_path
 
 
 def main():
@@ -65,22 +30,18 @@ def main():
     # Run accuracy check
     correlations = {image_name: truth_word_correlation(truth, observations_data, image_name, version)
                     for image_name in observations_data}
-    match_scores = {image_name: [(*correlation, accuracy.accuracy_score(*correlation))
-                                 for correlation in correlations[image_name]]
-                    for image_name in correlations}
+    scores = get_scores(correlations)
+    averages = get_averages(scores)
 
     # Output results
-    scores_path = f"{ocr_out_path}_scores"
-    if not os.path.exists(scores_path):
-        os.makedirs(scores_path)
+    scores_path = make_scores_path(ocr_out_path)
+    store_scores(scores, scores_path)
+    store_averages(averages, scores_path)
 
-    for image in match_scores:
-        with open(f"{scores_path}/{image}.csv", 'w') as scores_file:
-            writer = csv.writer(scores_file)
-            writer.writerow(('truth', 'observed', 'score'))
-
-            for score in match_scores[image]:
-                writer.writerow(score)
+    # Print results
+    print("Average accuracy scores by file:")
+    for image_name in averages:
+        print(f"{image_name}: {averages[image_name]}%")
 
 
 if __name__ == "__main__":

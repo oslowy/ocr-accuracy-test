@@ -1,5 +1,6 @@
 from shapely.geometry import Polygon
-from fuzzywuzzy.fuzz import ratio
+
+from extract import extract_observed_word_infos
 
 
 def area_within_ratio(observed_poly, target_poly):
@@ -48,7 +49,10 @@ def extract_observed_word(observed_word_info, version):
     return word.encode('ascii', 'ignore').decode('ascii')
 
 
-def accuracy_score(truth_word, observed_word):
-    return ratio(observed_word.lower()[:len(truth_word)],
-                 truth_word.lower()) \
-        if observed_word else 0
+def truth_word_correlation(truth, observations, image_name, version):
+    return [(truth_word_info['word'],
+             locate_truth_word_in_observation(truth_word_info,
+                                              extract_observed_word_infos(observations[image_name],
+                                                                          version),
+                                              version))
+            for truth_word_info in truth[image_name]]
