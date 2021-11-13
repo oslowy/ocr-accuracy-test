@@ -53,7 +53,7 @@ def main():
     with open(gt_filename) as gt_xml_file:
         truth = ground_truth_dictionary(gt_xml_file)
 
-    # Read observation files by reading filenames in meta-list file
+    # Read all observation files in directory
     observation_filenames = os.listdir(ocr_out_path)
     observations_contents = {filename[:-4]: json.load(open(f"{ocr_out_path}/{filename}"))
                              for filename in observation_filenames}
