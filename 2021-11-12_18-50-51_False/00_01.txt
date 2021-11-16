@@ -1,0 +1,498 @@
+[
+{
+  "locale": "en",
+  "description": "Americas Best Value\nAstoria Inn & Suites\na8T i\nDicanted Attractioe\nTiketa kvailable\n714-774-3882\nVACANCY\n",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 368,
+        "y": 380
+      },
+      {
+        "x": 723,
+        "y": 380
+      },
+      {
+        "x": 723,
+        "y": 769
+      },
+      {
+        "x": 368,
+        "y": 769
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Americas",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 368,
+        "y": 399
+      },
+      {
+        "x": 528,
+        "y": 389
+      },
+      {
+        "x": 530,
+        "y": 428
+      },
+      {
+        "x": 371,
+        "y": 439
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Best",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 537,
+        "y": 388
+      },
+      {
+        "x": 613,
+        "y": 383
+      },
+      {
+        "x": 615,
+        "y": 422
+      },
+      {
+        "x": 540,
+        "y": 427
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Value",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 625,
+        "y": 386
+      },
+      {
+        "x": 721,
+        "y": 380
+      },
+      {
+        "x": 723,
+        "y": 409
+      },
+      {
+        "x": 627,
+        "y": 415
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Astoria",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 430,
+        "y": 441
+      },
+      {
+        "x": 513,
+        "y": 435
+      },
+      {
+        "x": 515,
+        "y": 466
+      },
+      {
+        "x": 432,
+        "y": 472
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Inn",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 520,
+        "y": 435
+      },
+      {
+        "x": 565,
+        "y": 432
+      },
+      {
+        "x": 567,
+        "y": 462
+      },
+      {
+        "x": 522,
+        "y": 465
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "&",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 572,
+        "y": 431
+      },
+      {
+        "x": 590,
+        "y": 430
+      },
+      {
+        "x": 592,
+        "y": 460
+      },
+      {
+        "x": 574,
+        "y": 461
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Suites",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 593,
+        "y": 428
+      },
+      {
+        "x": 672,
+        "y": 422
+      },
+      {
+        "x": 674,
+        "y": 454
+      },
+      {
+        "x": 595,
+        "y": 460
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "a8T",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 547,
+        "y": 660
+      },
+      {
+        "x": 572,
+        "y": 659
+      },
+      {
+        "x": 572,
+        "y": 672
+      },
+      {
+        "x": 547,
+        "y": 673
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "i",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 609,
+        "y": 661
+      },
+      {
+        "x": 645,
+        "y": 660
+      },
+      {
+        "x": 645,
+        "y": 667
+      },
+      {
+        "x": 609,
+        "y": 668
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Dicanted",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 533,
+        "y": 678
+      },
+      {
+        "x": 611,
+        "y": 675
+      },
+      {
+        "x": 612,
+        "y": 691
+      },
+      {
+        "x": 534,
+        "y": 694
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Attractioe",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 616,
+        "y": 677
+      },
+      {
+        "x": 684,
+        "y": 674
+      },
+      {
+        "x": 684,
+        "y": 687
+      },
+      {
+        "x": 616,
+        "y": 690
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Tiketa",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 555,
+        "y": 694
+      },
+      {
+        "x": 605,
+        "y": 692
+      },
+      {
+        "x": 606,
+        "y": 710
+      },
+      {
+        "x": 556,
+        "y": 712
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "kvailable",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 607,
+        "y": 692
+      },
+      {
+        "x": 668,
+        "y": 689
+      },
+      {
+        "x": 669,
+        "y": 707
+      },
+      {
+        "x": 608,
+        "y": 710
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "714-774-3882",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 541,
+        "y": 714
+      },
+      {
+        "x": 685,
+        "y": 710
+      },
+      {
+        "x": 686,
+        "y": 735
+      },
+      {
+        "x": 542,
+        "y": 739
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "VACANCY",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 577,
+        "y": 744
+      },
+      {
+        "x": 690,
+        "y": 742
+      },
+      {
+        "x": 690,
+        "y": 767
+      },
+      {
+        "x": 577,
+        "y": 769
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+}
+]

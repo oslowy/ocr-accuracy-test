@@ -1,0 +1,343 @@
+[
+{
+  "locale": "en",
+  "description": "HAHM MOTORIPORTS\nMOTORSPORTS\nANMA\nH.\nVAVE RUNNER\nRATOR \u2022 ATVS\n",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 1,
+        "y": 323
+      },
+      {
+        "x": 1016,
+        "y": 323
+      },
+      {
+        "x": 1016,
+        "y": 715
+      },
+      {
+        "x": 1,
+        "y": 715
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "HAHM",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 243,
+        "y": 323
+      },
+      {
+        "x": 449,
+        "y": 331
+      },
+      {
+        "x": 446,
+        "y": 405
+      },
+      {
+        "x": 240,
+        "y": 397
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "MOTORIPORTS",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 490,
+        "y": 333
+      },
+      {
+        "x": 954,
+        "y": 351
+      },
+      {
+        "x": 951,
+        "y": 424
+      },
+      {
+        "x": 487,
+        "y": 406
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "MOTORSPORTS",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 56,
+        "y": 341
+      },
+      {
+        "x": 165,
+        "y": 346
+      },
+      {
+        "x": 164,
+        "y": 364
+      },
+      {
+        "x": 55,
+        "y": 359
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "ANMA",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 859,
+        "y": 620
+      },
+      {
+        "x": 966,
+        "y": 624
+      },
+      {
+        "x": 965,
+        "y": 639
+      },
+      {
+        "x": 858,
+        "y": 635
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "H.",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 998,
+        "y": 624
+      },
+      {
+        "x": 1016,
+        "y": 624
+      },
+      {
+        "x": 1016,
+        "y": 639
+      },
+      {
+        "x": 998,
+        "y": 639
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "VAVE",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 1,
+        "y": 612
+      },
+      {
+        "x": 101,
+        "y": 613
+      },
+      {
+        "x": 101,
+        "y": 658
+      },
+      {
+        "x": 1,
+        "y": 657
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "RUNNER",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 127,
+        "y": 612
+      },
+      {
+        "x": 285,
+        "y": 613
+      },
+      {
+        "x": 285,
+        "y": 659
+      },
+      {
+        "x": 127,
+        "y": 658
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "RATOR",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 1,
+        "y": 666
+      },
+      {
+        "x": 123,
+        "y": 667
+      },
+      {
+        "x": 123,
+        "y": 715
+      },
+      {
+        "x": 1,
+        "y": 714
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "\u2022",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 150,
+        "y": 667
+      },
+      {
+        "x": 195,
+        "y": 667
+      },
+      {
+        "x": 195,
+        "y": 714
+      },
+      {
+        "x": 150,
+        "y": 714
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "ATVS",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 184,
+        "y": 671
+      },
+      {
+        "x": 287,
+        "y": 672
+      },
+      {
+        "x": 287,
+        "y": 710
+      },
+      {
+        "x": 184,
+        "y": 709
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+}
+]

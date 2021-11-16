@@ -1,0 +1,374 @@
+[
+{
+  "locale": "en",
+  "description": "JUKE JOINT\nBAR &CRILL\nTHE\nCOCNTILS\nPOOL\nFOOD\n73 51\nm\n",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 226,
+        "y": 316
+      },
+      {
+        "x": 969,
+        "y": 316
+      },
+      {
+        "x": 969,
+        "y": 595
+      },
+      {
+        "x": 226,
+        "y": 595
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "JUKE",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 303,
+        "y": 316
+      },
+      {
+        "x": 501,
+        "y": 319
+      },
+      {
+        "x": 500,
+        "y": 395
+      },
+      {
+        "x": 302,
+        "y": 392
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "JOINT",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 500,
+        "y": 329
+      },
+      {
+        "x": 723,
+        "y": 333
+      },
+      {
+        "x": 722,
+        "y": 391
+      },
+      {
+        "x": 499,
+        "y": 387
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "BAR",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 394,
+        "y": 394
+      },
+      {
+        "x": 482,
+        "y": 395
+      },
+      {
+        "x": 482,
+        "y": 439
+      },
+      {
+        "x": 394,
+        "y": 438
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "&CRILL",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 518,
+        "y": 401
+      },
+      {
+        "x": 615,
+        "y": 402
+      },
+      {
+        "x": 615,
+        "y": 430
+      },
+      {
+        "x": 518,
+        "y": 429
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "THE",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 226,
+        "y": 346
+      },
+      {
+        "x": 284,
+        "y": 322
+      },
+      {
+        "x": 295,
+        "y": 348
+      },
+      {
+        "x": 237,
+        "y": 372
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "COCNTILS",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 769,
+        "y": 327
+      },
+      {
+        "x": 969,
+        "y": 328
+      },
+      {
+        "x": 969,
+        "y": 353
+      },
+      {
+        "x": 769,
+        "y": 352
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "POOL",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 768,
+        "y": 368
+      },
+      {
+        "x": 878,
+        "y": 370
+      },
+      {
+        "x": 877,
+        "y": 395
+      },
+      {
+        "x": 768,
+        "y": 393
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "FOOD",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 767,
+        "y": 411
+      },
+      {
+        "x": 882,
+        "y": 412
+      },
+      {
+        "x": 882,
+        "y": 438
+      },
+      {
+        "x": 767,
+        "y": 437
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "73",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 469,
+        "y": 514
+      },
+      {
+        "x": 639,
+        "y": 512
+      },
+      {
+        "x": 640,
+        "y": 593
+      },
+      {
+        "x": 470,
+        "y": 595
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "51",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 657,
+        "y": 512
+      },
+      {
+        "x": 721,
+        "y": 511
+      },
+      {
+        "x": 722,
+        "y": 592
+      },
+      {
+        "x": 658,
+        "y": 593
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "m",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 863,
+        "y": 517
+      },
+      {
+        "x": 911,
+        "y": 518
+      },
+      {
+        "x": 910,
+        "y": 593
+      },
+      {
+        "x": 862,
+        "y": 592
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+}
+]

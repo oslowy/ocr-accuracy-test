@@ -1,0 +1,281 @@
+[
+{
+  "locale": "en",
+  "description": "AmericasiBest Value\nuria Inn &: Suites\n714-774-3882\nVAGANGY\n",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 375,
+        "y": 371
+      },
+      {
+        "x": 730,
+        "y": 371
+      },
+      {
+        "x": 730,
+        "y": 767
+      },
+      {
+        "x": 375,
+        "y": 767
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "AmericasiBest",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 375,
+        "y": 396
+      },
+      {
+        "x": 614,
+        "y": 380
+      },
+      {
+        "x": 618,
+        "y": 427
+      },
+      {
+        "x": 378,
+        "y": 444
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Value",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 626,
+        "y": 378
+      },
+      {
+        "x": 727,
+        "y": 371
+      },
+      {
+        "x": 730,
+        "y": 419
+      },
+      {
+        "x": 629,
+        "y": 426
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "uria",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 456,
+        "y": 441
+      },
+      {
+        "x": 515,
+        "y": 437
+      },
+      {
+        "x": 517,
+        "y": 465
+      },
+      {
+        "x": 458,
+        "y": 469
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Inn",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 522,
+        "y": 440
+      },
+      {
+        "x": 560,
+        "y": 437
+      },
+      {
+        "x": 561,
+        "y": 456
+      },
+      {
+        "x": 523,
+        "y": 459
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "&:",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 569,
+        "y": 437
+      },
+      {
+        "x": 587,
+        "y": 436
+      },
+      {
+        "x": 588,
+        "y": 454
+      },
+      {
+        "x": 570,
+        "y": 455
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "Suites",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 596,
+        "y": 434
+      },
+      {
+        "x": 669,
+        "y": 429
+      },
+      {
+        "x": 670,
+        "y": 450
+      },
+      {
+        "x": 598,
+        "y": 455
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "714-774-3882",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 541,
+        "y": 717
+      },
+      {
+        "x": 684,
+        "y": 712
+      },
+      {
+        "x": 685,
+        "y": 731
+      },
+      {
+        "x": 542,
+        "y": 736
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+},
+{
+  "description": "VAGANGY",
+  "boundingPoly": {
+    "vertices": [
+      {
+        "x": 558,
+        "y": 741
+      },
+      {
+        "x": 693,
+        "y": 741
+      },
+      {
+        "x": 693,
+        "y": 767
+      },
+      {
+        "x": 558,
+        "y": 767
+      }
+    ],
+    "normalizedVertices": []
+  },
+  "mid": "",
+  "locale": "",
+  "score": 0.0,
+  "confidence": 0.0,
+  "topicality": 0.0,
+  "locations": [],
+  "properties": []
+}
+]
