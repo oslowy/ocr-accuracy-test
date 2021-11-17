@@ -24,8 +24,9 @@ def main():
                              for filename in observation_filenames}
 
     # Extract data from observation formats
-    observations_data = {image_name: extract_observed_word_infos(observations_contents[image_name], version)
-                         for image_name in observations_contents['annotations']}
+    observations_data = {image_name: extract_observed_word_infos(observations_contents[image_name]['annotations'],
+                                                                 version)
+                         for image_name in observations_contents}
 
     # Run accuracy check
     correlations = {image_name: truth_word_correlation(truth, observations_data, image_name, version)
