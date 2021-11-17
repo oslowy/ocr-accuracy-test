@@ -20,12 +20,12 @@ def main():
 
     # Read all observation files in directory
     observation_filenames = os.listdir(ocr_out_path)
-    observations_contents = {filename[:-4]: json.load(open(f"{ocr_out_path}/{filename}"))
+    observations_contents = {filename[-9:-4]: json.load(open(f"{ocr_out_path}/{filename}"))
                              for filename in observation_filenames}
 
     # Extract data from observation formats
     observations_data = {image_name: extract_observed_word_infos(observations_contents[image_name], version)
-                         for image_name in observations_contents}
+                         for image_name in observations_contents['annotations']}
 
     # Run accuracy check
     correlations = {image_name: truth_word_correlation(truth, observations_data, image_name, version)
