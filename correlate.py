@@ -4,7 +4,18 @@ from extract import extract_observed_word_infos
 
 
 def area_within_ratio(observed_poly, target_poly):
-    return (observed_poly.intersection(target_poly)).area / observed_poly.area
+    """
+    In order to gracefully deal with segmentation errors, this function reports a high correlation
+    score for an observed word even if its boundaries stretch over other target words, provided that
+    a high proportion of the target word is inside the observed word's boundaries.
+
+    :param observed_poly: The bounding polygon of an observed word, from cloud OCR output
+    :param target_poly: The bounding polygon of the target word, from ground truth data
+    that we are trying to find a match for
+    :return: the best ratio of overlap area to total area of either the observed or truth word.
+    """
+    return max((observed_poly.intersection(target_poly)).area / observed_poly.area,
+               (observed_poly.intersection(target_poly)).area / target_poly.area)
 
 
 def locate_truth_word_in_observation(truth_word_info, observed_word_infos, version):

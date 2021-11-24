@@ -4,7 +4,7 @@ import sys
 
 from correlate import truth_word_correlation
 from extract import ground_truth_dictionary, extract_observed_word_infos
-from scoring import get_scores, get_averages, store_scores, store_averages, make_scores_path
+import scoring
 
 
 def main():
@@ -31,13 +31,13 @@ def main():
     # Run accuracy check
     correlations = {image_name: truth_word_correlation(truth, observations_data, image_name, version)
                     for image_name in observations_data}
-    scores = get_scores(correlations)
-    averages = get_averages(scores)
+    scores = scoring.get_scores(correlations)
+    averages = scoring.get_averages(scores)
 
     # Output results
-    scores_path = make_scores_path(ocr_out_path)
-    store_scores(scores, scores_path)
-    store_averages(averages, scores_path)
+    scores_path = scoring.make_scores_path(ocr_out_path)
+    scoring.store_scores(scores, scores_path)
+    scoring.store_averages(averages, scores_path)
 
     # Print results
     print("Average accuracy scores by file:")
