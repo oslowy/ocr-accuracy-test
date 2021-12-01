@@ -22,7 +22,7 @@ def ground_truth_dictionary(gt_xml_file):
 def extract_observed_word_infos(one_image_ocr, version):
     if version == 'aws':
         return [detection
-                for detection in one_image_ocr['TextDetections']
+                for detection in one_image_ocr
                 if detection['Type'] == 'WORD']
     else:  # Google format
         return one_image_ocr[1:]
