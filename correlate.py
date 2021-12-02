@@ -18,8 +18,9 @@ def area_within_ratio(observed_poly, target_poly):
                (observed_poly.intersection(target_poly)).area / target_poly.area)
 
 
-def locate_truth_word_in_observation(truth_word_info, observed_word_infos, version):
+def locate_truth_word_in_observation(truth_word_info, observed_word_infos, size_info, version):
     """
+    :param size_info: For AWS only, the image dimensions that allow the bounding polygon to be interpreted
     :param truth_word_info: From ground truth data.
     :param observed_word_infos: From cloud OCR output.
     :param version: Google or AWS observation data format
@@ -29,7 +30,7 @@ def locate_truth_word_in_observation(truth_word_info, observed_word_infos, versi
 
     for observed_word_info in observed_word_infos:
         word = extract_observed_word(observed_word_info, version)
-        within_truth_area = area_within_ratio(extract_observed_bounding_poly(observed_word_info, version),
+        within_truth_area = area_within_ratio(extract_observed_bounding_poly(observed_word_info, size_info, version),
                                               convert_truth_bounding_poly(truth_word_info))
         if within_truth_area >= within_truth_threshold:
             return word
@@ -44,9 +45,14 @@ def convert_truth_bounding_poly(word_info):
     return Polygon([(x0, y0), (x0 + width, y0), (x0 + width, y0 + height), (x0, y0 + height)])
 
 
-def extract_observed_bounding_poly(word_info, version):
+def convert_aws_geometry_point(point, size_info):
+    return float(point['X']) * float(size_info['x']), float(point['Y']) * float(size_info['y'])
+
+
+def extract_observed_bounding_poly(word_info, size_info, version):
     if version == 'aws':
-        return Polygon([(point['X'], point['Y']) for point in word_info['Geometry']['Polygon']])
+        return Polygon([convert_aws_geometry_point(point, size_info)
+                        for point in word_info['Geometry']['Polygon']])
     else:  # Google format
         return Polygon([(point['x'], point['y']) for point in word_info['boundingPoly']['vertices']])
 
@@ -65,5 +71,6 @@ def truth_word_correlation(truth, observations, image_name, version):
              locate_truth_word_in_observation(truth_word_info,
                                               extract_observed_word_infos(observations[image_name],
                                                                           version),
+                                              truth[image_name]['dimensions'],
                                               version))
-            for truth_word_info in truth[image_name]]
+            for truth_word_info in truth[image_name]['words']]

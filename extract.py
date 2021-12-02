@@ -5,8 +5,9 @@ def extract_image_info(image_element):
     tagged_rectangle_elements = image_element.getElementsByTagName("taggedRectangle")
 
     # Key is sequence index, not target word, because target words are often duplicated
-    return [dict([('word', e.getElementsByTagName("tag")[0].firstChild.data)] + e.attributes.items())
-            for e in tagged_rectangle_elements]
+    return {'words': [dict([('word', e.getElementsByTagName("tag")[0].firstChild.data)] + e.attributes.items())
+            for e in tagged_rectangle_elements],
+            'dimensions': dict(image_element.getElementsByTagName("Resolution")[0].attributes.items())}
 
 
 def ground_truth_dictionary(gt_xml_file):
